@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.callor.memo.persistance.memoDao">
+
+	<insert id="insert">
+		INSERT INTO tbl_memo(
+			m_seq, m_author, m_date, m_time, m_memo,m_tite,m_image
+		) VALUES (
+			#{m_seq},#{m_author},#{m_date},#{m_time},#{m_memo},#{m_tite},#{m_image}
+		)
+	</insert>
+
+</mapper> 
